@@ -1,6 +1,7 @@
 [
   {
-    "repository": "android_device_samsung_trlte-common",
-    "target_path": "device/samsung/trlte-common"
+    "repository": "spleef/android_device_samsung_trlte-common",
+    "target_path": "device/samsung/trlte-common",
+    "branch": "liquid"
   }
 ]
