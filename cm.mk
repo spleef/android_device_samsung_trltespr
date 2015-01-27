@@ -14,13 +14,19 @@
 # limitations under the License.
 #
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
 $(call inherit-product, device/samsung/trltespr/full_trltespr.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/beanstalk/config/nfc_enhanced.mk)
 
-# Inherit common CM phone.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit common BS phone.
+$(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := trltespr
-PRODUCT_NAME := cm_trltespr
+PRODUCT_NAME := bs_trltespr
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trltespr BUILD_FINGERPRINT=samsung/trltespr/trltespr:4.4.4/KTU84P/N910PVPU1ANK2:user/release-keys PRIVATE_BUILD_DESC="trltespr-user 4.4.4 KTU84P N910PVPU1ANK2 release-keys"
