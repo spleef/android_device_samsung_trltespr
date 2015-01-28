@@ -42,12 +42,12 @@
   {
     "repository": "spleef/android_device_samsung_trltespr",
     "target_path": "device/samsung/trltespr",
-    "branch: "slim"
+    "branch": "slim"
   },
   {
     "repository": "WoundTight/android_device_samsung_trlteusc",
     "target_path": "device/samsung/trlteusc",
-    "branch: "cm-12.0"
+    "branch": "cm-12.0"
   },
   {
     "repository": "spleef/proprietary_vendor_samsung",
