@@ -51,7 +51,7 @@
     "remote":      "github",
     "repository": "spleef/android_device_samsung_trltespr",
     "target_path": "device/samsung/trltespr",
-    "branch: "broken"
+    "branch": "broken"
   },
   {
     "remote":      "github", 
