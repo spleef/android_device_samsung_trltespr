@@ -61,8 +61,8 @@ vendor/lib/libxml.so
 vendor/lib/libtime_genoff.so
 
 # Keymaster firmware
-firmware/image/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt
-firmware/image/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00
-firmware/image/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01
-firmware/image/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02
-firmware/image/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03
+vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt
+vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00
+vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01
+vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02
+vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03
