@@ -10,19 +10,14 @@
     "branch": "cm-12.0"
   },
   {
-    "repository": "CyanogenMod/android_device_samsung_qcom-common",
+    "repository": "AICP/device_samsung_qcom-common",
     "target_path": "device/samsung/qcom-common",
-    "branch": "cm-12.0"
+    "branch": "lp5.0"
   },
   {
     "repository": "CyanogenMod/android_hardware_samsung",
     "target_path": "hardware/samsung",
     "branch": "cm-12.0"
-  },
-    {
-    "repository": "CyanogenMod/android_hardware_qcom_display",
-    "target_path": "hardware/qcom/display-caf/apq8084",
-    "branch": "cm-12.0-caf-8084"
   },
   {
     "repository": "CyanogenMod/android_hardware_qcom_audio",
@@ -30,18 +25,8 @@
     "branch": "cm-12.0-caf-8974"
   },
   {
-    "repository": "CyanogenMod/android_hardware_qcom_media",
-    "target_path": "hardware/qcom/media-caf/apq8084",
-    "branch": "cm-12.0-caf-8084"
-  },
-  {
-    "repository": "spleef/proprietary_vendor_samsung",
+    "repository": "AICP/proprietary_vendor_samsung",
     "target_path": "vendor/samsung",
-    "branch": "cm-12.0"
-  },
-  {
-    "repository": "spleef/android_external_mm-dash",
-    "target_path": "external/mm-dash",
-    "branch": "cm-12.0"
+    "branch": "lp5.0"
   }
 ]
