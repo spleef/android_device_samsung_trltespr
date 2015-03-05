@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
 $(call inherit-product, device/samsung/trltespr/full_trltespr.mk)
 
 # Enhanced NFC
