@@ -46,7 +46,6 @@ import com.android.internal.telephony.uicc.IccCardStatus;
 public class trlteRIL extends RIL implements CommandsInterface {
 
     private AudioManager mAudioManager;
-    private boolean isGSM = false;
     private boolean newril = needsOldRilFeature("newril"); //4.4.4 verson of Samsung RIL
     private Message mPendingGetSimStatus;
 
@@ -165,7 +164,6 @@ public class trlteRIL extends RIL implements CommandsInterface {
         IccCardStatus cardStatus = new IccCardStatus();
         cardStatus.setCardState(p.readInt());
         cardStatus.setUniversalPinState(p.readInt());
-        cardStatus.mGsmUmtsSubscriptionAppIndex = p.readInt();
         cardStatus.mCdmaSubscriptionAppIndex = p.readInt();
         cardStatus.mImsSubscriptionAppIndex = p.readInt();
 
@@ -200,7 +198,6 @@ public class trlteRIL extends RIL implements CommandsInterface {
         // for sprint gsm(lte) only sim
         if (numApplications==1 && appStatus.app_type == appStatus.AppTypeFromRILInt(2)) {
             cardStatus.mApplications = new IccCardApplicationStatus[numApplications+2];
-            cardStatus.mGsmUmtsSubscriptionAppIndex = 0;
             cardStatus.mApplications[cardStatus.mGsmUmtsSubscriptionAppIndex]=appStatus;
             cardStatus.mCdmaSubscriptionAppIndex = 1;
             cardStatus.mImsSubscriptionAppIndex = 2;
@@ -239,8 +236,6 @@ public class trlteRIL extends RIL implements CommandsInterface {
         for (int i = 0; i < numInts; i++) {
             response[i] = p.readInt();
         }
-        //gsm
-        response[0] &= 0xff;
         //cdma
         response[2] %= 256;
         response[4] %= 256;
@@ -252,7 +247,7 @@ public class trlteRIL extends RIL implements CommandsInterface {
     @Override
     public void setPhoneType(int phoneType){
         super.setPhoneType(phoneType);
-        isGSM = (phoneType != RILConstants.CDMA_PHONE);
+        (phoneType != RILConstants.CDMA_PHONE);
     }
 
     protected Object
