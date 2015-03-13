@@ -5,9 +5,9 @@
     "branch": "aicp"
   },
   {
-    "repository": "slayher/android_kernel_samsung_trlte",
+    "repository": "spleef/android_kernel_samsung_trlte",
     "target_path": "kernel/samsung/trlte",
-    "branch": "cm-12.-lp"
+    "branch": "cm-12.0"
   },
   {
     "repository": "AICP/device_samsung_qcom-common",
