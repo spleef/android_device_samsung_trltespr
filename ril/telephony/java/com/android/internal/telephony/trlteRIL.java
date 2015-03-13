@@ -39,8 +39,6 @@ import java.util.Collections;
  */
 public class trlteRIL extends RIL {
 
-    private static final int RIL_REQUEST_DIAL_EMERGENCY = 10016;
-
     private boolean mIsGsm = false;
 
     public trlteRIL(Context context, int networkMode, int cdmaSubscription) {
