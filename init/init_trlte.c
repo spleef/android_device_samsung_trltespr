@@ -58,7 +58,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "trltespr-user 5.0.1 LRX22C N910PVPU1BOB7 release-keys");
         property_set("ro.product.model", "SM-N910P");
         property_set("ro.product.device", "trltespr");
-        cdma_properties("1", "310120", "Sprint");
+        cdma_properties();
     }
 
     property_get("ro.product.device", device);
