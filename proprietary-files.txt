@@ -48,6 +48,7 @@ bin/rmnetcli
 lib/libmdmdetect.so
 lib/libreference-ril.so
 lib/libril.so
+lib/librilutils.so
 lib/librmnetctl.so
 lib/libsec-ril.so
 lib/libsecnativefeature.so
