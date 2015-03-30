@@ -54,14 +54,14 @@ public class trlteRIL extends RIL implements CommandsInterface {
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
-        mQANElements = SystemProperties.getInt("ro.ril.telephony.mqanelements", 6);
+        mQANElements = SystemProperties.getInt("ro.ril.telephony.mqanelements", 4);
     }
 
     public trlteRIL(Context context, int networkMode,
             int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
-        mQANElements = SystemProperties.getInt("ro.ril.telephony.mqanelements", 6);
+        mQANElements = SystemProperties.getInt("ro.ril.telephony.mqanelements", 4);
     }
     
     // Workaround for Samsung CDMA "ring of death" bug:
